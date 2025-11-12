@@ -1,0 +1,141 @@
+@media (max-width: 1200px) {
+ .hero-section {
+    height: 70vh;
+}header.hero-section.position-relative.text-center.text-white {}
+
+.hero-title {
+    font-size: 30px;
+}
+
+.section-subtitle {
+    font-size: 46px;
+}
+
+
+
+.goal-card {
+    height: 300px;
+}
+
+
+.py-5 {
+    padding: 20px !important;
+}
+#menu .main-nav a {
+    font-size: 30px;
+}
+}
+
+/* Small devices (mobile, max-width: 767px) */
+@media (max-width: 991px) {
+  
+}
+@media (max-width: 767px) {
+    .hero-section {
+    height: 60vh;
+}header.hero-section.position-relative.text-center.text-white {}
+
+.section-subtitle {
+    font-size: 30px;
+}
+
+.section-title {
+    font-size: 21px;
+}
+
+.about-btn {
+    padding: 12px 37px;
+    font-size: 15px;
+}
+
+.mission-img-wrapper {
+    width: 57%;
+    text-align: end !important;
+}
+
+img.img-fluid.rounded {}
+
+.mission-img-wrapper img {
+    /* width: 60%; */
+    /* text-align: end !important; */
+    /* display: flex; */
+    /* align-items: center; */
+    justify-content: end !important;
+}
+
+.goal-card {
+    height: 260px;
+}
+
+.goal-card {}
+
+#menu .main-nav a {
+    font-size: 24px;
+}
+  
+}
+@media (max-width: 576px) {
+  a.navbar-brand.logo-text.fw-bold.fs-4 img {
+    width: 115px;
+}
+
+.nav-custom {
+    padding: 0 9px 0 0;
+}
+
+.hero-title {
+    font-size: 20px;
+}
+
+h1.hero-title {}
+
+.section-subtitle {
+    font-size: 18px;
+}
+
+.section-title {
+    font-size: 15px;
+}
+
+.section-text {
+    font-size: 12px;
+}
+
+p.section-text {}
+
+.goals-title {
+    font-size: 19px;
+    margin-bottom: 18px !important;
+}
+
+h2.goals-title.mb-5 {}
+
+.mission-img-wrapper img {
+    width: 100%;
+}
+
+.mission-img-wrapper {
+    width: 100%;
+}
+#menu .main-nav a {
+    font-size: 20px;
+}
+.booknow-btn {
+    display: none;
+}
+.header-booknow{
+           display: block;
+        width: fit-content;
+        height: 35px;
+        font-size: 12px;
+        background-color: #fff;
+        color: #000;
+        border-radius: 32px;
+        margin-right: 13px;
+        padding: 0 16px;
+    
+}
+.menu-text {
+    font-size: 11px;
+}
+}

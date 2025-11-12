@@ -1,0 +1,560 @@
+@font-face {
+    font-family: 'supra'; 
+    src: url('./font/static/PlusJakartaSans-Medium.ttf'),
+    }
+body {
+ font-family: 'supra' !important; 
+  color: #111;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================= HERO SECTION ================= */
+.hero-section {
+  background-image: url("./banner-img.jpg");
+        background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  height: 116vh;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.navbar .logo-img {
+  width: 180px;
+  height: auto;
+}
+
+.menu-text {
+    color: #000;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 600 !important;
+}
+.nav-custom{
+     background: rgba(255, 255, 2555, 0.3); /* red with transparency */
+    backdrop-filter: blur(4px); /* background blur effect */
+    -webkit-backdrop-filter: blur(4px); /* Safari support */
+    padding: 0 40px 0 0;
+    border-radius: 40px;
+    margin-top: 18px;
+}
+.hero-content {
+  position: relative;
+  top: 20%;
+  transform: translateY(-30%);
+}
+
+.hero-title {
+  font-size: 60px;
+  font-weight: 050;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  border-radius: 50px;
+  padding: 20px 57px;
+  background: #000;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.hero-btn:hover {
+  background: #222;
+}
+
+/* ================= MISSION SECTION ================= */
+.mission-section {
+  background-color: #FFFBEF;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 10;
+}
+
+.section-subtitle {
+  font-size: 60px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #000;
+}
+
+.section-title {
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.section-text {
+  font-size: 16px;
+  color: #000;
+  margin-top: 15px;
+  line-height: 1.7;
+}
+.about-btn{
+    background-color: #000;
+    color: #fff;
+    border-radius: 22px;
+    padding: 10px 40px;
+}
+.mission-img-wrapper img {
+  border-radius: 20px;
+  width: 74%;
+}
+
+/* ================= GOALS SECTION ================= */
+.goals-section {
+  background-color: #fff;
+}
+
+.goals-title {
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.goal-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 22px;
+}
+
+.goal-img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.4s ease;
+}
+.goal-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.goal-card::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 39.94%, rgba(0, 0, 0, 0.7) 76.13%);
+
+}
+.goal-card:hover .goal-img {
+  transform: scale(1.05);
+}
+
+.goal-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.goal-overlay h5 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.goal-card:hover .goal-overlay {
+  opacity: 1;
+}
+
+.goals-row.active .goal-card {
+  flex: 0 0 25%; /* 4 cards = 25% */
+  transition: all 0.4s ease;
+}
+
+.goals-row .goal-card.active {
+  flex: 0 0 50%; /* Hovered one takes 6 columns */
+}
+
+.goals-row .goal-card.hidden {
+  display: none;
+}
+.goal-overlay p {
+  font-size: 14px;
+  margin: 0;
+}
+
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+  .hero-title {
+    font-size: 2.2rem;
+  }
+
+  .mission-section {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin-top: -50px;
+  }
+
+  .goal-overlay h5 {
+    font-size: 14px;
+  }
+
+  .goal-overlay p {
+    font-size: 13px;
+  }
+}
+
+
+
+/* कंटेनर जो MENU टेक्स्ट और आइकॉन को एक लाइन में रखता है */
+.menu-container {
+    display: flex;
+    align-items: center; /* वर्टिकल अलाइनमेंट */
+    cursor: pointer; /* यह दिखाने के लिए कि यह क्लिक करने योग्य है */
+    padding: 10px;
+    background-color: transparent; /* अगर पीछे कोई इमेज है */
+}
+
+/* 'MENU' टेक्स्ट के लिए स्टाइलिंग */
+.menu-text {
+   
+    font-size: 18px; /* साइज़ को एडजस्ट करें */
+    font-weight: 500; /* थोड़ा मोटा */
+    letter-spacing: 1px; /* अक्षरों के बीच की दूरी */
+    color: #000; /* गहरा काला/ग्रे रंग */
+    margin-right: 1px; /* टेक्स्ट और आइकॉन के बीच की जगह */
+}
+
+/* हैमबर्गर आइकॉन कंटेनर */
+.menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px; /* कुल चौड़ाई */
+    height: 16px; /* कुल ऊंचाई (3 बार और उनके बीच की जगह) */
+}
+
+/* प्रत्येक बार/लाइन के लिए स्टाइलिंग */
+.bar {
+    width: 100%;
+    height: 3px; /* बार की मोटाई */
+    background-color: #000; /* बार का रंग */
+    border-radius: 1px; /* हल्के गोल किनारे */
+}
+
+
+   /* ss */
+   
+#menu {
+  /* background: #de4152; */
+  background: #000000F2;
+
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  transition: all 0.7s ease-in-out;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1100;
+}
+#menu.open {
+  opacity: 1;
+  visibility: visible;
+}
+#menu.open li:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+#menu.open li:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+#menu.open li:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+#menu.open li:nth-child(4) {
+  -webkit-animation-delay: 0.4s;
+          animation-delay: 0.4s;
+}
+#menu.open li:nth-child(5) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+#menu.open li:nth-child(6) {
+  -webkit-animation-delay: 0.6s;
+          animation-delay: 0.6s;
+}
+#menu.open li:nth-child(7) {
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+#menu.open li:nth-child(8) {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
+}
+#menu.open li:nth-child(9) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+#menu.open li:nth-child(10) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+#menu.open li {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+  -webkit-animation-name: fadeInUp;
+          animation-name: fadeInUp;
+}
+#menu ul:hover a {
+  opacity: 0.5;
+}
+#menu ul a {
+  -webkit-transform: translateZ(0);
+  transition: opacity 0.3s ease-in-out;
+}
+#menu ul a:hover {
+  opacity: 1;
+}
+#menu .main-nav {
+  position: relative;
+  top: 10%;
+  transform: translateY(-62%);
+}
+#menu .main-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 20%;
+  text-align: left;
+  top: 121px;
+}
+#menu .main-nav a {
+  color: #ffffff;
+  display: block;
+  font-size: 36px;
+  font-weight: 500;
+  padding: 5px 10px;
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+#menu .main-nav a:first {
+  padding-top: 0;
+}
+#menu .menu-footer {
+  padding: 2rem;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+#menu .menu-footer ul {
+  display: inline-block;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#menu .menu-footer ul li {
+  display: inline;
+  margin: 0 1rem;
+}
+#menu .menu-footer a {
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.toggle-menu {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  height: 50px;
+  outline: none;
+  padding: 0;
+  pointer-events: initial;
+  position: relative;
+  vertical-align: middle;
+  width: 50px;
+  z-index: 1110;
+}
+.toggle-menu span {
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 2px;
+  left: calc(50% - 13px);
+  position: absolute;
+  top: calc(50% - 1px);
+  transform-origin: 50% 50%;
+  transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
+  width: 26px;
+}
+.toggle-menu span:before, .toggle-menu span:after {
+  background-color: #000;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform-origin: 50% 50%;
+  transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
+  width: 26px;
+}
+.toggle-menu span:before {
+  top: 7px;
+}
+.toggle-menu span:after {
+  top: -7px;
+}
+.toggle-menu.active span {
+  background-color: transparent;
+  transition: background 0.2s ease-out;
+}
+.toggle-menu.active span:before, .toggle-menu.active span:after {
+  transition: top 0.2s ease-out, transform 0.2s 0.2s ease-out;
+}
+.toggle-menu.active span:before {
+  top: 0;
+  transform: rotate3d(0, 0, 1, -45deg);
+}
+.toggle-menu.active span:after {
+  top: 0;
+  transform: rotate3d(0, 0, 1, 45deg);
+}
+
+
+/*  */
+
+.innder-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav.main-nav .conatiner {
+    width: 78%;
+    margin: 0 auto;
+}
+.booknow-btn{
+    width: 200px;
+    height: 56px;
+    font-size: 19px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 32px;
+    position: relative;
+    right: 20%;
+    position: absolute;
+    top: 102px;
+}
+span.close-menu {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Custom CSS for the Footer */
+.site-footer {
+    /* Background color of the main footer area */
+    background-color: #F8F8F8; /* Light off-white/cream color */
+    color: #48443B; /* Dark text color for most elements */
+    font-family: 'Arial', sans-serif; /* Use a preferred font */
+}
+
+/* Headings (Visit, Follow) */
+.footer-heading {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #48443B; /* Darker text */
+    letter-spacing: 0.1em;
+}
+
+/* Brand Name Text */
+.brand-name {
+    line-height: 1.2;
+    color: #48443B; 
+}
+
+/* Contact/Address Text */
+.site-footer p {
+    font-size: 0.95rem;
+    line-height: 1.5;
+    color: #6A665A; /* Slightly lighter for address/email */
+}
+
+/* Email/Contact Link */
+.contact-link {
+    color: #A99A7A; /* The light gold color from the image */
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.contact-link:hover {
+    color: #48443B;
+    text-decoration: underline;
+}
+
+/* Social Icons */
+.social-icon-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #A99A7A; /* Gold border */
+    border-radius: 5px;
+    color: #A99A7A; /* Gold icon color */
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.social-icon-link:hover {
+    background-color: #A99A7A;
+    color: #FFFFFF;
+}
+
+/* Copyright Bar */
+.copyright-bar {
+    background-color: #000000; /* Black background */
+    color: #A99A7A; /* Gold/light text color */
+}
+
+.copyright-text {
+    font-size: 0.75rem;
+    color: #fff !important; /* Gold text */
+}
+    .align-items-lg-start {
+        align-items: center !important;
+    
+}
+
+.logo-placeholder-footer{
+    width: 40%;
+}
+.header-booknow{
+    display: none;
+}
