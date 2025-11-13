@@ -76,7 +76,7 @@ img.img-fluid.rounded {}
 }
 @media (max-width: 576px) {
   a.navbar-brand.logo-text.fw-bold.fs-4 img {
-    width: 115px;
+    width: 89px;
 }
 
 .nav-custom {
@@ -136,6 +136,18 @@ h2.goals-title.mb-5 {}
     
 }
 .menu-text {
-    font-size: 11px;
+    display: none;
+}
+
+.hero-btn {
+    padding: 10px 20px;
+    font-size: 12px;
+    position: absolute;
+    top: -92%;
+}
+.toggle-menu {
+    height: 16px;
+    width: 19px;
+    margin-right: 13px;
 }
 }
