@@ -157,4 +157,7 @@ h2.goals-title.mb-5 {}
 button.btn.btn-dark.hero-btn.mt-3{
     margin-top: 0 !important;
 }
+    .hero-section {
+        height: 75vh;
+    }
 }
