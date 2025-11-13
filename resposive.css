@@ -154,4 +154,7 @@ h2.goals-title.mb-5 {}
     top: 12%;
     transform: translateY(-30%);
 }
+button.btn.btn-dark.hero-btn.mt-3{
+    margin-top: 0 !important;
+}
 }
