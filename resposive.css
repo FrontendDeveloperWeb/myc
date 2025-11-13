@@ -142,12 +142,16 @@ h2.goals-title.mb-5 {}
 .hero-btn {
     padding: 10px 20px;
     font-size: 12px;
-    position: absolute;
-    top: -92%;
+  
 }
 .toggle-menu {
     height: 16px;
     width: 19px;
     margin-right: 13px;
+}
+.hero-content {
+    position: relative;
+    top: 12%;
+    transform: translateY(-30%);
 }
 }
