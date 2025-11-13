@@ -24,11 +24,25 @@
 #menu .main-nav a {
     font-size: 30px;
 }
+.profile-image-container {
+    position: relative;
+    height: 430px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.heading-font h1 {
+    font-size: 68px;
+}
 }
 
 /* Small devices (mobile, max-width: 767px) */
 @media (max-width: 991px) {
-  
+  .profile-image-container {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
 }
 @media (max-width: 767px) {
     .hero-section {
@@ -72,7 +86,15 @@ img.img-fluid.rounded {}
 #menu .main-nav a {
     font-size: 24px;
 }
-  
+  .profile-image-container {
+    position: relative;
+    height: 340px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.heading-font h1 {
+    font-size: 32px;
+}
 }
 @media (max-width: 576px) {
   a.navbar-brand.logo-text.fw-bold.fs-4 img {
@@ -84,7 +106,7 @@ img.img-fluid.rounded {}
 }
 
 .hero-title {
-    font-size: 20px;
+    font-size: 29px;
 }
 
 h1.hero-title {}
@@ -124,7 +146,7 @@ h2.goals-title.mb-5 {}
     display: none;
 }
 .header-booknow{
-           display: block;
+           display: none;
         width: fit-content;
         height: 35px;
         font-size: 12px;
@@ -160,4 +182,38 @@ button.btn.btn-dark.hero-btn.mt-3{
     .hero-section {
         height: 75vh;
     }
+    .info-box {
+    margin-bottom: 20px;
+}
+.toggle-menu span {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  left: calc(50% - 13px);
+  position: absolute;
+  top: calc(50% - 1px);
+  transform-origin: 50% 50%;
+  transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
+  width: 26px;
+}
+.toggle-menu span:before, .toggle-menu span:after {
+  background-color: #fff;
+  content: "";
+  display: block;
+  height: 2px;
+  position: absolute;
+  transform-origin: 50% 50%;
+  transition: background-color 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
+  width: 26px;
+}
+.profile-image-container {
+    position: relative;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.heading-font h1 {
+    font-size: 28px;
+}
 }

@@ -21,6 +21,16 @@ body {
   height: 116vh;
   position: relative;
 }
+.new-sec{
+ background-image: url("./new-bg.jpg");
+        background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  height: 116vh;
+  position: relative;
+}
 
 .overlay {
   position: absolute;
@@ -29,6 +39,14 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
+}
+.overlay-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .navbar .logo-img {
@@ -44,6 +62,14 @@ body {
 }
 .nav-custom{
      background: rgba(255, 255, 2555, 0.3); /* red with transparency */
+    backdrop-filter: blur(4px); /* background blur effect */
+    -webkit-backdrop-filter: blur(4px); /* Safari support */
+    padding: 0 40px 0 0;
+    border-radius: 40px;
+    margin-top: 18px;
+}
+.nav-custom-2{
+   background: rgba(0, 0,0, 0.3); /* red with transparency */
     backdrop-filter: blur(4px); /* background blur effect */
     -webkit-backdrop-filter: blur(4px); /* Safari support */
     padding: 0 40px 0 0;
@@ -85,7 +111,14 @@ body {
   position: relative;
   z-index: 10;
 }
-
+.mission-section-new {
+  background-color: #fff;
+  border-top-left-radius: 60px;
+  border-top-right-radius: 60px;
+  margin-top: -50px;
+  position: relative;
+  z-index: 10;
+}
 .section-subtitle {
   font-size: 60px;
   letter-spacing: 2px;
@@ -557,4 +590,175 @@ span.close-menu {
 }
 .header-booknow{
     display: none;
+}
+
+
+.profile-card {
+      /* width: 320px; */
+      border-radius: 20px;
+      overflow: hidden;
+      background: #fff;
+      /* box-shadow: 0 8px 20px rgba(0,0,0,0.1); */
+      transition: 0.3s;
+    }
+
+    .profile-image-container {
+      position: relative;
+      height: 483px;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+
+    .profile-image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: 0.4s ease;
+    }
+
+    /* Read More Button Hidden by Default */
+    .read-more-btn {
+      position: absolute;
+      left: 50%;
+      bottom: -60px; /* hidden below */
+      transform: translateX(-50%);
+     background: #00000066;
+backdrop-filter: blur(5px);
+      color: #fff;
+      padding: 10px 26px;
+      border-radius: 30px;
+      font-size: 15px;
+      transition: all 0.4s ease;
+      opacity: 0;
+      border: 0;
+    }
+
+    /* Hover: Animate Up */
+    .profile-card:hover .read-more-btn {
+      bottom: 20px; /* slides up */
+      opacity: 1;
+    }
+
+    /* Slight Dark Image On Hover */
+    .profile-card:hover img {
+      filter: brightness(0.85);
+    }
+
+    .profile-details {
+      padding: 20px 0;
+    }
+
+    .profile-name {
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .profile-role {
+      font-size: 15px;
+      color: gray;
+      margin-top: -5px;
+    }
+
+    /* MODAL BOX */
+.profile-modal {
+  border-radius: 20px;
+  overflow: hidden;
+  border: none;
+}
+
+/* MAIN WRAPPER */
+.profile-wrapper {
+  display: flex;
+  background: #f7f3e7;
+  flex-wrap: wrap;
+}
+
+/* LEFT IMAGE */
+.profile-image {
+
+height: 288px;
+
+overflow: hidden;
+
+border-radius: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* RIGHT CONTENT */
+.profile-content {
+ 
+padding: 0 10px;
+}
+
+/* TITLE */
+.profile-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.profile-subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  margin-left: 6px;
+  color: #666;
+}
+
+/* DESCRIPTION */
+.profile-desc {
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  margin-bottom: 25px;
+}
+
+/* INFO BOXES WRAPPER */
+.profile-info-boxes {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* INFO BOX */
+.info-box {
+  flex: 1;
+  background: #b49c65;
+  padding: 22px;
+  border-radius: 11px;
+  text-align: center;
+  color: #fff;
+}
+
+.info-title {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.info-data {
+  font-size: 14px;
+  margin-top: 3px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .profile-image {
+    width: 100%;
+    height: 250px;
+  }
+  .profile-content {
+    width: 100%;
+    padding: 20px;
+  }
+  .profile-wrapper {
+    flex-direction: column;
+  }
+}
+.heading-font h1{
+  font-size: 80px;
 }
