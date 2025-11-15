@@ -106,7 +106,7 @@ img.img-fluid.rounded {}
 }
 
 .hero-title {
-    font-size: 29px;
+    font-size: 30px;
 }
 
 h1.hero-title {}
@@ -162,9 +162,8 @@ h2.goals-title.mb-5 {}
 }
 
 .hero-btn {
-    padding: 10px 20px;
+    padding: 16px 30px;
     font-size: 12px;
-  
 }
 .toggle-menu {
     height: 16px;
@@ -214,6 +213,20 @@ button.btn.btn-dark.hero-btn.mt-3{
     border-radius: 20px;
 }
 .heading-font h1 {
-    font-size: 28px;
+    font-size: 38px;
 }
+.profile-name {
+    font-size: 16px;
+}
+
+.profile-details {
+    padding: 10px 0;
+}
+
+.profile-role {
+    font-size: 13px;
+    margin-top: 0 !important;
+}
+
+.profile-role {}
 }

@@ -46,7 +46,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.);
 }
 
 .navbar .logo-img {
@@ -55,7 +55,7 @@ body {
 }
 
 .menu-text {
-    color: #000;
+    color: #fff;
   font-size: 16px;
   letter-spacing: 1px;
   font-weight: 600 !important;
@@ -78,15 +78,15 @@ body {
 }
 .hero-content {
   position: relative;
-  top: 20%;
+  top: 18%;
   transform: translateY(-30%);
 }
 
 .hero-title {
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 050;
   line-height: 1.3;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
 }
 
 .hero-btn {
@@ -270,7 +270,7 @@ body {
     font-size: 18px; /* साइज़ को एडजस्ट करें */
     font-weight: 500; /* थोड़ा मोटा */
     letter-spacing: 1px; /* अक्षरों के बीच की दूरी */
-    color: #000; /* गहरा काला/ग्रे रंग */
+    color: #fff; /* गहरा काला/ग्रे रंग */
     margin-right: 1px; /* टेक्स्ट और आइकॉन के बीच की जगह */
 }
 
@@ -437,7 +437,7 @@ body {
   z-index: 1110;
 }
 .toggle-menu span {
-  background-color: #000;
+  background-color: #fff;
   content: "";
   display: block;
   height: 2px;
@@ -449,7 +449,7 @@ body {
   width: 26px;
 }
 .toggle-menu span:before, .toggle-menu span:after {
-  background-color: #000;
+  background-color: #fff;
   content: "";
   display: block;
   height: 2px;
