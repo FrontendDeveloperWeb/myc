@@ -43,6 +43,9 @@
     overflow: hidden;
     border-radius: 20px;
 }
+.new-sec .hero-content {
+    top: 35%;
+}
 }
 @media (max-width: 767px) {
     .hero-section {
@@ -93,7 +96,10 @@ img.img-fluid.rounded {}
     border-radius: 20px;
 }
 .heading-font h1 {
-    font-size: 32px;
+    font-size: 56px;
+}
+.new-sec .hero-content {
+    top: 32%;
 }
 }
 @media (max-width: 576px) {
@@ -226,6 +232,24 @@ button.btn.btn-dark.hero-btn.mt-3{
 .profile-role {
     font-size: 13px;
     margin-top: 0 !important;
+}
+.hero-title{
+    display: none;
+}
+.hero-title-mobile{
+    display: block;
+    font-size: 40px !important;
+}
+.instructer-text{
+     font-size: 50px !important;
+}
+
+.new-sec .hero-content {
+    top: 41%;
+}
+.profile-card .read-more-btn {
+    bottom: 20px;
+    opacity: 1;
 }
 
 .profile-role {}
