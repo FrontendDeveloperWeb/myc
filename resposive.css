@@ -252,5 +252,9 @@ button.btn.btn-dark.hero-btn.mt-3{
     opacity: 1;
 }
 
-.profile-role {}
+.hero-section {
+  background-image: url("./250.png");
+    
+  
+}
 }
