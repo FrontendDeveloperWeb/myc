@@ -185,7 +185,7 @@ button.btn.btn-dark.hero-btn.mt-3{
     margin-top: 0 !important;
 }
     .hero-section {
-        height: 75vh;
+        height: 57vh;
     }
     .info-box {
     margin-bottom: 20px;
@@ -237,8 +237,9 @@ button.btn.btn-dark.hero-btn.mt-3{
     display: none;
 }
 .hero-title-mobile{
-    display: block;
-    font-size: 40px !important;
+           display: block;
+        font-size: 36px !important;
+        margin-top: 10px;
 }
 .instructer-text{
      font-size: 50px !important;
